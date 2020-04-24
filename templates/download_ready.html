@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Download</title>
+    </head>
+    <body>
+        <h2>PGP decrypt is done.</h2>
+        <form action="/auth/download_decrypted" method="POST" enctype="multipart/form-data">            
+            PGP decrypted file <input type=hidden name=filename value={{.filename}}>
+            <input type="submit" value="Download decrypted image"><br><br>
+        </form>
+        <form action="/auth/logout" method="POST">
+            Logout <input type="submit" value="Logout">
+        </form>        
+    </body>
+</html>

@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>PGP decrypt request</title>
+    </head>
+    <body>
+        <h2>Upload PGP encrypted file to be decrypted</h2>
+        <form action="/auth/upload" method="POST" enctype="multipart/form-data">
+            PGP encrypted file to be decrypted <input type="file" name="file"><br><br>
+            Upload <input type="submit" value="Upload the image"><br><br>
+        </form>
+        <form action="/auth/logout" method="POST">
+            Logout <input type="submit" value="Logout">
+        </form>        
+    </body>
+</html>

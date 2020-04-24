@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Welcome</title>
+    </head>
+    <body>
+        <h2>Welcome to PGP decrypt server</h2>
+        Logged in user: {{.userid}}<br><br>
+        <form action="/auth/decrypt_request" method="GET">
+            PGP decrypt request <input type="submit" value="Decrypt request"><br><br>
+        </form>
+        <form action="/auth/logout" method="POST">
+            Logout <input type="submit" value="Logout">
+        </form>
+    </body>
+</html>
